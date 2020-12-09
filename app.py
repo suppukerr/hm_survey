@@ -30,7 +30,7 @@ def instruction():
 
 @app.route('/survey')
 def survey():
-    survey = Questions.query.all()
+#    survey = Questions.query.all()
     return render_template(
         'survey.html',
         survey=survey
